@@ -11,7 +11,9 @@
       @include('inc.navbar')
 
     <div class="container">
-      @include('inc.showcase')
+      @if(Request::is('/'))
+        @include('inc.showcase')
+      @endif
       <div class="row">
         <div class="col-md-8 col-lg-8">
             @yield('content')
@@ -22,5 +24,10 @@
         </div>
       </div>
     </div>
+
+    <footer id="footer" class="text-center">
+      <p>Copyright 2019 &copy; Patrick Callahan</p>
+
+    </footer>
     </body>
 </html>
