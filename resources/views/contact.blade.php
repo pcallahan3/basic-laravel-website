@@ -1,1 +1,6 @@
-<h1>contact</h1>
+@extends('layouts.app')
+
+
+@section('content')
+  <h1>Contact</h1>
+@endsection
